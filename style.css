@@ -37,7 +37,7 @@ body {
     
     height: 320px;
     text-shadow: 2px 2px 4px black;
-   background: url("../p1.avif") center/cover no-repeat;
+   background: url("p1.avif") center/cover no-repeat;
     color: black;
     display: flex;
     flex-direction: column;
@@ -54,27 +54,27 @@ body {
     
 }
 #trains{
-    background: url("../bk3.png");
+    background: url("bk3.png");
     background-repeat: no-repeat;
     background-size: cover; 
 
     
 }
 #search{
-    background: url("../bk3.png");
+    background: url("bk3.png");
     background-size: cover;   
     background-repeat: no-repeat;
     height: 480px;
     
 }
 #fare{
-    background: url("../bk3.png");
+    background: url("bk3.png");
     background-repeat: no-repeat;
     background-size: cover; 
     height:485px;
 }
 #pnr{
-    background: url("../bk3.png");
+    background: url("bk3.png");
     background-repeat: no-repeat;
     background-size: cover; 
     height:485px;
