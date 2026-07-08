@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+     background: #f1f3f6; 
+    
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: #0b3d91;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    
+    height: 320px;
+    text-shadow: 2px 2px 4px black;
+   background: url("../images/p1.avif") center/cover no-repeat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:485px;
+
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+    
+    padding: 40px;
+    
+}
+#trains{
+    background: url("../images/bk3.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    
+}
+#search{
+    background: url("../images/bk3.png");
+    background-size: cover;   
+    background-repeat: no-repeat;
+    height: 480px;
+    
+}
+#fare{
+    background: url("../images/bk3.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:485px;
+}
+#pnr{
+    background: url("../images/bk3.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:485px;
+}
+/* ---------- TRAIN LIST ---------- */
+.train-list {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 370px;
+}
+
+.train-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    padding: 10px;
+    width: 100%;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #062a66;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    background: white;
+    width: 450px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 100px;
+}
+
+
+.card input, .card select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* ---------- INFO BOX ---------- */
+#trainInfoBox {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dce6ff;
+    border-left: 4px solid #0b3d91;
+    display: none;
+}
+
+.info-box {
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------
+   📱 RESPONSIVE DESIGN STARTS HERE
+--------------------------------------------------- */
+
+/* ----- Tablets (max-width: 900px) ----- */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .train-list {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
+
+/* ----- Mobile (max-width: 600px) ----- */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 220px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .train-list {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
